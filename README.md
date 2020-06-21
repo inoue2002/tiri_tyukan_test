@@ -1,4 +1,4 @@
-# Linebot-lamda-template
+# tiri_tyukan_test
 
 $ git clone  https://github.com/youkan2002/Linebot-lamda-template.git
 $ npm i 
