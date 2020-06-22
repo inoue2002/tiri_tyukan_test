@@ -12,10 +12,11 @@ export class TiriTyukantestStack extends cdk.Stack {
       runtime: lambda.Runtime.NODEJS_10_X,
       timeout: cdk.Duration.seconds(5),
       environment: {
-        ACCESS_TOKEN: `${process.env.ACCESS_TOKEN}`,
-          CHANNEL_SECRET: `${process.env.CHANNEL_SECRET}`
+        ACCESS_TOKEN: `x`,
+          CHANNEL_SECRET: `x`
       }
     });
+
 
     const api = new apigateway.RestApi(this, 'LineSampleApi', {
         restApiName: 'line-sample'
