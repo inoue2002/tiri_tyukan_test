@@ -1,24 +1,32 @@
 {
-  "name": "tiri_tyukan_test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "tiri_tyukantest",
+  "version": "0.1.0",
+  "bin": {
+    "tiri_tyukantest": "bin/tiri_tyukantest.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/youkan2002/Linebot-lamda-template.git"
+  "devDependencies": {
+    "@aws-cdk/assert": "1.46.0",
+    "@types/jest": "^25.2.1",
+    "@types/node": "10.17.5",
+    "jest": "^25.5.0",
+    "ts-jest": "^25.3.1",
+    "aws-cdk": "1.46.0",
+    "ts-node": "^8.1.0",
+    "typescript": "~3.7.2"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/youkan2002/Linebot-lamda-template/issues"
-  },
-  "homepage": "https://github.com/youkan2002/Linebot-lamda-template#readme",
   "dependencies": {
-    "@line/bot-sdk": "^6.8.4"
- 
+    "@aws-cdk/aws-apigateway": "^1.46.0",
+    "@aws-cdk/aws-lambda": "^1.46.0",
+    "@aws-cdk/core": "1.46.0",
+    "@line/bot-sdk": "^7.0.0",
+    "@types/aws-lambda": "^8.10.56",
+    "dotenv": "^8.2.0",
+    "source-map-support": "^0.5.16"
   }
 }

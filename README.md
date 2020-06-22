@@ -1,15 +1,14 @@
-# tiri_tyukan_test
+# Welcome to your CDK TypeScript project!
 
-$ git clone  https://github.com/youkan2002/Linebot-lamda-template.git
-$ npm i 
+This is a blank project for TypeScript development with CDK.
 
-lambdaコンソールにて関数の作成
-環境変数の設定
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-ACCESSTOKEN = "xxxx"
-CHANNELSECRET="xx"
+## Useful commands
 
-APIgatewayの設定を行い、エンドポイントをLINEのコンソール上でWebhookURLに設定する
-
-詳しくは：
-https://qiita.com/shinbunbun_/items/ae09364504002d0c25f1
+ * `npm run build`   compile typescript to js
+ * `npm run watch`   watch for changes and compile
+ * `npm run test`    perform the jest unit tests
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk synth`       emits the synthesized CloudFormation template
