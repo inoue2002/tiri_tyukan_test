@@ -623,27 +623,43 @@ async function postbackFunc(event: any) {
             "type": "flex",
             "altText": "Flex Message",
             "contents": {
-                "type": "bubble",
-                "direction": "ltr",
+              "type": "bubble",
+              "direction": "ltr",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text":`答え-${result[1]}`,
+                    "align": "center"
+                  }
+                ]
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "md",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `答え：${result[0]}`,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": `回答時間：${hour}時間${min}分${sec}秒`,
+                    "align": "center"
+                  }
+                ]
+              },
+              "styles": {
                 "header": {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                        {
-                            "type": "text",
-                            "text": `↑答え：${result[0]}`,
-                            "align": "center"
-                        },
-                        {
-                            "type": "text",
-                            "text": `↑回答時間：${hour}時間${min}分${sec}秒`,
-                            "align": "center",
-                            "wrap": true
-                        }
-                    ]
+                  "backgroundColor": "#46E5EE"
                 }
+              }
             }
-        },
+          },
         {
             "type": "flex",
             "altText": "Flex Message",
